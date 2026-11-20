@@ -1,0 +1,49 @@
+{
+  "format": 1,
+  "name": "HTML Export for DBeaver Community",
+  "url": "https://monosabio.github.io/html-export-update-site/",
+  "versions": [
+    {
+      "commit": "5a52e8286da1236cddda30cb332f88b703150a37",
+      "files": {
+        "artifacts.jar": "d1d9363602a844f712d382273e7ce2ade52f350102bb23eacc2536dd9d2e3a65",
+        "content.jar": "4965098d3e24d757f2ae8b03c9c0c1188642adfcf6b349dfe15af6f81b82937a",
+        "features/local.quickhtml.export.feature_0.2.5.202611200208-5a52e82.jar": "de3deb09b4512dbbc8b743e91f94a78de0368f4658fa2b44f435e147e460859e",
+        "p2.index": "84b77791d48f152ec99fc5787fe9d6905553ffd5d68673c8c161eab99ebd864e",
+        "plugins/local.quickhtml.export_0.2.5.202611200208-5a52e82.jar": "f382185ce0f35f4ae8d519ace9a02e9d310645684073b59bbb0b8b29d3574d1d"
+      },
+      "osgi": "0.2.5.202611200208-5a52e82",
+      "pgp": [
+        "BBA987AAB8D738A0548DB03A88A1DE796ADEF15A"
+      ],
+      "tag": "v0.2.5",
+      "version": "0.2.5",
+      "zip": {
+        "name": "html-export-p2-0.2.5.202611200208-5a52e82.zip",
+        "sha256": "388e4cef7a5723352f4752fe1202e06a6489227adeb7593694cf68f2cf8217d7",
+        "size": 170421
+      }
+    },
+    {
+      "commit": "0f09671a87c3173acf20284740e19bd76c13ae28",
+      "files": {
+        "artifacts.jar": "24efaf6dba76b5d77203785314f16b12bf8ac6eb6e3a339655e5d0390b11628e",
+        "content.jar": "d5283baa4e6d70c24e0418cd0a8ff9b2d96efc2460b4d97cdb8bce063811f308",
+        "features/local.quickhtml.export.feature_0.2.6.202611200237-0f09671.jar": "75a7d4985ab1c3bded2394692e232e74adac71545782e2581b26bf64ecc2d7fe",
+        "p2.index": "84b77791d48f152ec99fc5787fe9d6905553ffd5d68673c8c161eab99ebd864e",
+        "plugins/local.quickhtml.export_0.2.6.202611200237-0f09671.jar": "c2baf9c4aa99cca66d43b69064375f7a037454a51f09086445e1abc83235e193"
+      },
+      "osgi": "0.2.6.202611200237-0f09671",
+      "pgp": [
+        "BBA987AAB8D738A0548DB03A88A1DE796ADEF15A"
+      ],
+      "tag": "v0.2.6",
+      "version": "0.2.6",
+      "zip": {
+        "name": "html-export-p2-0.2.6.202611200237-0f09671.zip",
+        "sha256": "45b90776765d6c3b61d05115cd5af5bdd1d7308bd744d106b09f5e92dd6b50aa",
+        "size": 166482
+      }
+    }
+  ]
+}

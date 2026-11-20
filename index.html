@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Export for DBeaver Community</title>
+  <meta name="description" content="Update site and download of HTML Export, an extension for DBeaver Community 26.2.5.">
+  <style>
+    :root { color-scheme: light dark; --bg: #f5f6f8; --card: #ffffff; --fg: #1b2130; --muted: #586274; --line: #d8dde5;
+            --code: #eef1f5; --accent: #1d5bb8; --accent-fg: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #111419; --card: #1a1e25; --fg: #e6e9ef; --muted: #a5adbb; --line: #313845; --code: #242a33;
+              --accent: #74a6f2; --accent-fg: #0d1117; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 48px; }
+    header h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 6px; }
+    header p { margin: 4px 0 0; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin-top: 20px; min-width: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 0 20px; }
+    .eyebrow, .label { margin: 0 0 4px; font-size: 0.82rem; font-weight: 600; color: var(--muted); text-transform: uppercase;
+                       letter-spacing: 0.03em; }
+    .version { font-size: 1.6rem; font-weight: 700; margin: 0 0 14px; }
+    .muted { color: var(--muted); font-weight: 400; }
+    .button { display: inline-block; background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 600;
+              padding: 10px 18px; border-radius: 8px; margin-right: 8px; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 16px 0 0; font-size: 0.9rem; }
+    dt { color: var(--muted); } dd { margin: 0; }
+    h2 { font-size: 1.2rem; margin: 0 0 12px; } h3 { font-size: 1.02rem; margin: 20px 0 8px; }
+    code { background: var(--code); padding: 1px 5px; border-radius: 4px; font-size: 0.88em; overflow-wrap: anywhere; }
+    .url, .fingerprint { display: block; padding: 10px 12px; margin: 0 0 12px; font-size: 0.98rem; }
+    .fingerprint { font-size: 1.05rem; letter-spacing: 0.02em; }
+    ol, ul { padding-left: 1.3em; } li { margin: 4px 0; }
+    .table { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+    th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 6px 8px; vertical-align: top; white-space: nowrap; }
+    td code { overflow-wrap: normal; }
+    footer { margin-top: 28px; font-size: 0.88rem; color: var(--muted); }
+    @media (max-width: 520px) { dl { grid-template-columns: 1fr; } dd { margin-bottom: 6px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>HTML Export for DBeaver Community</h1>
+    <p>Extension for DBeaver Community 26.2.5 that turns SQL results into interactive HTML reports.</p>
+    <p lang="es">Extensión para DBeaver Community 26.2.5 que convierte resultados SQL en reportes HTML interactivos.</p>
+    <p><a href="#en">English</a> · <a href="#es">Español</a></p>
+  </header>
+  <section class="card" aria-labelledby="latest">
+    <p class="eyebrow" id="latest">Available version · <span lang="es">Versión disponible</span></p>
+    <p class="version">0.2.6 <span class="muted">· 2026-11-20</span></p>
+    <p><a class="button" href="downloads/html-export-p2-0.2.6.202611200237-0f09671.zip" download>Download ZIP · <span lang="es">Descargar ZIP</span></a>
+      <span class="muted">163 KB</span></p>
+    <dl>
+      <dt>File · <span lang="es">Archivo</span></dt><dd><code>html-export-p2-0.2.6.202611200237-0f09671.zip</code></dd>
+      <dt>SHA-256</dt><dd><code>45b90776765d6c3b61d05115cd5af5bdd1d7308bd744d106b09f5e92dd6b50aa</code></dd>
+      <dt>Installed as · <span lang="es">Versión en DBeaver</span></dt><dd><code>0.2.6.202611200237-0f09671</code></dd>
+    </dl>
+  </section>
+  <div class="grid">
+    <section class="card" lang="en" id="en">
+      <h2>Install from the update site</h2>
+      <p class="label">Update site URL (for DBeaver)</p>
+      <code class="url">https://monosabio.github.io/html-export-update-site/</code>
+      <ol>
+        <li>In DBeaver Community 26.2.5, choose <strong>Help &gt; Install New Software...</strong> and click <strong>Add...</strong></li>
+        <li>Enter Name <code>HTML Export</code> and Location <code>https://monosabio.github.io/html-export-update-site/</code>, then click <strong>Add</strong>.</li>
+        <li>Check <strong>HTML Export for DBeaver Community</strong>, click <strong>Next &gt;</strong> twice, accept the Apache License 2.0 and click <strong>Finish</strong>.</li>
+        <li>DBeaver asks two security questions. <strong>Trust Authorities</strong>: trust only <code>https://monosabio.github.io</code>. <strong>Trust Artifacts</strong>: trust the <strong>PGP</strong> row only if its fingerprint is the <a href="#signing">signing key</a> below.</li>
+        <li>Click <strong>Restart Now</strong>. Then open <strong>Window &gt; Preferences &gt; Editors &gt; Data Editor &gt; HTML Export</strong>, set the paths of Python and of the DBeaver Export generator, and click <strong>Verify configuration</strong>.</li>
+      </ol>
+      <p>To update later: <strong>Help &gt; Installation Information</strong>, tab <strong>Installed Software</strong>, select HTML Export and click <strong>Update...</strong> (<em>Check for Updates</em> only updates DBeaver itself).</p>
+      <p>If DBeaver has no network access: download the ZIP, then choose <strong>Help &gt; Install New Software... &gt; Add... &gt; Archive...</strong> and select it. To receive updates, add the update site URL later.</p>
+      <h3>Requirements</h3>
+      <ul>
+        <li><strong>DBeaver Community 26.2.5</strong> on Windows 11 x64 or Linux x86_64 (the Java 21 bundled with DBeaver is enough).</li>
+        <li><strong>Python 3.10</strong> or newer.</li>
+        <li><strong>DBeaver Export generator 26.19.1</strong>, unmodified, installed separately. This site does not distribute it; without it, HTML Export installs but cannot generate reports.</li>
+      </ul>
+      <p><a href="https://github.com/monosabio/html-export-update-site#readme">Complete installation guide</a></p>
+    </section>
+    <section class="card" lang="es" id="es">
+      <h2>Instalar desde el sitio de actualizaciones</h2>
+      <p class="label">URL del sitio de actualizaciones (para DBeaver)</p>
+      <code class="url">https://monosabio.github.io/html-export-update-site/</code>
+      <ol>
+        <li>En DBeaver Community 26.2.5, elegí <strong>Help &gt; Install New Software...</strong> y pulsá <strong>Add...</strong></li>
+        <li>Escribí Name <code>HTML Export</code> y Location <code>https://monosabio.github.io/html-export-update-site/</code>, y pulsá <strong>Add</strong>.</li>
+        <li>Marcá <strong>HTML Export for DBeaver Community</strong>, pulsá <strong>Next &gt;</strong> dos veces, aceptá la Apache License 2.0 y pulsá <strong>Finish</strong>.</li>
+        <li>DBeaver hace dos preguntas de seguridad. <strong>Trust Authorities</strong>: confiá solo en <code>https://monosabio.github.io</code>. <strong>Trust Artifacts</strong>: confiá en la fila <strong>PGP</strong> solo si su huella es la de la <a href="#signing">clave de firma</a> de abajo.</li>
+        <li>Pulsá <strong>Restart Now</strong>. Después abrí <strong>Window &gt; Preferences &gt; Editors &gt; Data Editor &gt; HTML Export</strong>, indicá las rutas de Python y del generador DBeaver Export, y pulsá <strong>Verify configuration</strong>.</li>
+      </ol>
+      <p>Para actualizar más adelante: <strong>Help &gt; Installation Information</strong>, pestaña <strong>Installed Software</strong>, seleccioná HTML Export y pulsá <strong>Update...</strong> (<em>Check for Updates</em> solo actualiza el propio DBeaver).</p>
+      <p>Si DBeaver no tiene acceso a la red: descargá el ZIP, elegí <strong>Help &gt; Install New Software... &gt; Add... &gt; Archive...</strong> y seleccionalo. Para recibir actualizaciones, agregá después la URL del sitio.</p>
+      <h3>Requisitos</h3>
+      <ul>
+        <li><strong>DBeaver Community 26.2.5</strong> en Windows 11 x64 o Linux x86_64 (alcanza con el Java 21 que trae DBeaver).</li>
+        <li><strong>Python 3.10</strong> o posterior.</li>
+        <li><strong>Generador DBeaver Export 26.19.1</strong>, sin modificaciones, instalado por separado. Este sitio no lo distribuye; sin él, HTML Export se instala pero no puede generar reportes.</li>
+      </ul>
+      <p><a href="https://github.com/monosabio/html-export-update-site/blob/main/README.es.md">Guía de instalación completa</a></p>
+    </section>
+  </div>
+  <section class="card" id="signing" aria-labelledby="signing-title">
+    <h2 id="signing-title">PGP signing key · <span lang="es">Clave de firma PGP</span></h2>
+    <p>Every version on this site is signed with this key. In <em>Do you trust these signers?</em>, trust the <strong>PGP</strong> row only if its fingerprint is exactly this one. Never check <em>Always trust all content</em>.</p>
+    <p lang="es">Cada versión de este sitio está firmada con esta clave. En <em>Do you trust these signers?</em>, confiá en la fila <strong>PGP</strong> solo si su huella es exactamente esta. Nunca marques <em>Always trust all content</em>.</p>
+    <code class="fingerprint">BBA9 87AA B8D7 38A0 548D B03A 88A1 DE79 6ADE F15A</code>
+    <p class="muted">As DBeaver shows it · <span lang="es">Como la muestra DBeaver</span>: <code>bba987aab8d738a0548db03a88a1de796adef15a</code></p>
+  </section>
+  <section class="card" aria-labelledby="versions">
+    <h2 id="versions">All versions · <span lang="es">Todas las versiones</span></h2>
+    <div class="table"><table>
+      <thead><tr><th>Version</th><th>Date</th><th>ZIP</th><th>SHA-256</th></tr></thead>
+      <tbody>
+      <tr><td>0.2.6</td><td>2026-11-20</td><td><a href="downloads/html-export-p2-0.2.6.202611200237-0f09671.zip">html-export-p2-0.2.6.202611200237-0f09671.zip</a></td><td><code>45b90776765d6c3b61d05115cd5af5bdd1d7308bd744d106b09f5e92dd6b50aa</code></td></tr>
+      <tr><td>0.2.5</td><td>2026-11-20</td><td><a href="downloads/html-export-p2-0.2.5.202611200208-5a52e82.zip">html-export-p2-0.2.5.202611200208-5a52e82.zip</a></td><td><code>388e4cef7a5723352f4752fe1202e06a6489227adeb7593694cf68f2cf8217d7</code></td></tr>
+      </tbody>
+    </table></div>
+    <p class="muted">All checksums · <span lang="es">Todas las sumas</span>: <a href="downloads/SHA256SUMS">downloads/SHA256SUMS</a>.
+      Published versions are never changed. · <span lang="es">Las versiones publicadas no se modifican.</span></p>
+  </section>
+  <footer>
+    <p>HTML Export is licensed under the <a href="LICENSE">Apache License 2.0</a> (<a href="NOTICE">NOTICE</a>). It is an
+      independent project and does not include DBeaver or the DBeaver Export generator. It runs locally and sends no
+      telemetry. Report a problem: <a href="https://github.com/monosabio/html-export-update-site/issues">GitHub Issues</a>; never attach real data.</p>
+    <p lang="es">HTML Export se distribuye bajo la Apache License 2.0. Es un proyecto independiente y no incluye DBeaver ni el
+      generador DBeaver Export. Funciona localmente y no envía telemetría. Para informar un problema:
+      <a href="https://github.com/monosabio/html-export-update-site/issues">GitHub Issues</a>; nunca adjuntes datos reales.</p>
+  </footer>
+</main>
+</body>
+</html>

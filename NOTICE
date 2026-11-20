@@ -1,0 +1,7 @@
+HTML Export for DBeaver Community
+Copyright 2026 Gaston Wierny
+
+Licensed under the Apache License, Version 2.0 (see the LICENSE file).
+
+This extension contains only its own code. It does not include DBeaver, Eclipse or the
+DBeaver Export generator, which are installed separately under their own licenses.
