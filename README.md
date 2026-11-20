@@ -75,14 +75,21 @@ Open **Window > Preferences > Editors > Data Editor > HTML Export**:
 - **DBeaver Export engine folder**: the folder of the installed DBeaver Export 26.19.1 generator, which contains
   `formatear_html_dbeaver_v7.py` and `report/`.
 - **Output folder for HTML reports**: an existing folder of yours.
+- **Click on the HTML Export button**: *Export loaded rows* (default, no SQL) or *Export complete result* (always
+  asks before running the query again; if the query cannot run again safely, it offers the loaded rows instead).
+- **NULL cells in the report**: *Blank* (default, as DBeaver's own *Export data > HTML*) or *Text NULL*. This changes
+  only what you see: the report's filters and totals treat NULL, empty text and the text NULL alike.
 - Optionally, **Open the generated file automatically** and **Show a notification when finished**.
+
+The first line of the page shows the installed HTML Export version and the DBeaver Export version it requires. The
+report shows the SQL query above the table, with *Copy query*, as DBeaver's own HTML export does.
 
 Click **Verify configuration**, then **Apply and Close**. The settings are kept when DBeaver restarts and when
 HTML Export is updated.
 
 ## What the two export options do
 
-- **Export loaded rows** (a click on the button): exports the rows DBeaver has already loaded, with the visible
+- **Export loaded rows** (a click on the button, unless changed in the preferences): exports the rows DBeaver has already loaded, with the visible
   columns in their order. It never runs SQL again.
 - **Export complete result** (the button's arrow): asks for confirmation, then **runs the result's query once
   more** and exports all of its rows. It accepts only a single read-only `SELECT` (or `WITH ... SELECT`) that it can

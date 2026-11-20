@@ -78,14 +78,22 @@ Abrí **Window > Preferences > Editors > Data Editor > HTML Export**:
 - **DBeaver Export engine folder**: la carpeta del generador DBeaver Export 26.19.1 instalado, la que contiene
   `formatear_html_dbeaver_v7.py` y `report/`.
 - **Output folder for HTML reports**: una carpeta tuya que ya exista.
+- **Click on the HTML Export button**: *Export loaded rows* (por defecto, sin SQL) o *Export complete result* (siempre
+  pregunta antes de volver a ejecutar la consulta; si la consulta no se puede volver a ejecutar con seguridad, ofrece
+  las filas cargadas).
+- **NULL cells in the report**: *Blank* (por defecto, como *Export data > HTML* de DBeaver) o *Text NULL*. Solo cambia
+  lo que se ve: los filtros y totales del reporte tratan igual NULL, el texto vacío y el texto NULL.
 - Opcional: **Open the generated file automatically** y **Show a notification when finished**.
+
+La primera línea de la página muestra la versión instalada de HTML Export y la versión de DBeaver Export que requiere.
+El reporte muestra la consulta SQL sobre la tabla, con *Copiar Query*, como el export HTML propio de DBeaver.
 
 Pulsá **Verify configuration** y luego **Apply and Close**. La configuración se conserva al reiniciar DBeaver y al
 actualizar HTML Export.
 
 ## Qué hacen las dos opciones de exportación
 
-- **Export loaded rows** (un clic en el botón): exporta las filas que DBeaver ya cargó, con las columnas visibles en
+- **Export loaded rows** (un clic en el botón, salvo que lo cambies en las preferencias): exporta las filas que DBeaver ya cargó, con las columnas visibles en
   su orden. Nunca vuelve a ejecutar SQL.
 - **Export complete result** (la flecha del botón): pide confirmación y después **vuelve a ejecutar la consulta del
   resultado una vez** y exporta todas sus filas. Solo acepta un único `SELECT` (o `WITH ... SELECT`) de lectura que
