@@ -28,7 +28,7 @@ reportes: los dos deben estar instalados en tu computadora antes de que HTML Exp
 | DBeaver Community | **26.2.5** | Otras versiones de DBeaver no están admitidas: DBeaver rechaza la instalación indicando que faltan elementos requeridos |
 | Java | 21 o posterior | Alcanza con el Java que trae DBeaver 26.2.5; no hay que instalar nada más |
 | Python | **3.10 o posterior** | En Windows, el `python.exe` real (no el alias de Microsoft Store ni un lanzador `.bat`) |
-| Generador DBeaver Export | **26.19.1**, sin modificaciones | Proyecto aparte, que se instala por separado. HTML Export compara 9 de sus archivos con valores SHA-256 fijos y rechaza cualquier otra versión o copia modificada, incluidos los cambios de fin de línea |
+| Generador DBeaver Export | **26.19.1** o **26.20.0**, sin modificaciones | Proyecto aparte, que se instala por separado. HTML Export reconoce la versión instalada y compara 9 de sus archivos con los valores SHA-256 fijos de esa versión; rechaza cualquier otra versión, una copia modificada (incluidos los cambios de fin de línea) y una carpeta que mezcle archivos de ambas versiones |
 | Sistema operativo | Windows 11 x64 o Linux x86_64 | Otros sistemas no se probaron |
 
 Este sitio no distribuye el generador DBeaver Export. Sin él, HTML Export se puede instalar, pero no puede generar
@@ -75,7 +75,7 @@ forma.
 Abrí **Window > Preferences > Editors > Data Editor > HTML Export**:
 
 - **Python executable**: la ruta completa, por ejemplo `C:\Program Files\Python313\python.exe` o `/usr/bin/python3`.
-- **DBeaver Export engine folder**: la carpeta del generador DBeaver Export 26.19.1 instalado, la que contiene
+- **DBeaver Export engine folder**: la carpeta del generador DBeaver Export 26.19.1 o 26.20.0 instalado, la que contiene
   `formatear_html_dbeaver_v7.py` y `report/`.
 - **Output folder for HTML reports**: una carpeta tuya que ya exista.
 - **Click on the HTML Export button**: *Export loaded rows* (por defecto, sin SQL) o *Export complete result* (siempre
@@ -195,8 +195,8 @@ HTML Export muestra un código técnico y una explicación breve, nunca tus dato
 - **Python no encontrado, no ejecutable o incompatible**: indicá en *Python executable* un Python 3.10+ real.
 - **Carpeta del motor no encontrada o archivo del motor faltante**: indicá en *DBeaver Export engine folder* la carpeta
   que contiene `formatear_html_dbeaver_v7.py` y `report/`.
-- **Archivo del motor modificado**: un archivo del generador difiere de la versión 26.19.1. Restaurá una copia sin
-  modificar; en Windows, comprobá que Git no haya convertido los fines de línea (`core.autocrlf`). No edites archivos
+- **Archivo del motor modificado**: un archivo del generador difiere de las versiones 26.19.1 y 26.20.0, o la carpeta
+  mezcla archivos de ambas. Restaurá una copia sin modificar de una versión; en Windows, comprobá que Git no haya convertido los fines de línea (`core.autocrlf`). No edites archivos
   para saltear la verificación.
 - **Límite superado**: reducí las filas cargadas o las columnas visibles.
 
