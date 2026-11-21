@@ -65,6 +65,27 @@
         "sha256": "66322a31240822374d19f1091a99384b523cc63687b76ebdf2c799c6b8fcde04",
         "size": 179573
       }
+    },
+    {
+      "commit": "d5b4eca57a083773e5173ee871da35dfb1db16c1",
+      "files": {
+        "artifacts.jar": "fc0fdb4b49e3672a767cb27943c78f1d3117114e7e27c759e5fea5183c7e7e84",
+        "content.jar": "53a689ae3b22a4eb4dfd49131515d15efc994f8ed63319abd75d8a9b30ade456",
+        "features/local.quickhtml.export.feature_0.3.3.202611202340-d5b4eca.jar": "9f410a47c8cc3a5aee125d7a1b7d6f89c320692dc4511d65bd0f7f43a5ab4891",
+        "p2.index": "84b77791d48f152ec99fc5787fe9d6905553ffd5d68673c8c161eab99ebd864e",
+        "plugins/local.quickhtml.export_0.3.3.202611202340-d5b4eca.jar": "ffb0462856ba736cf4749c3d80d08ce0c56878160e233204aca273616ea415b3"
+      },
+      "osgi": "0.3.3.202611202340-d5b4eca",
+      "pgp": [
+        "BBA987AAB8D738A0548DB03A88A1DE796ADEF15A"
+      ],
+      "tag": "v0.3.3",
+      "version": "0.3.3",
+      "zip": {
+        "name": "html-export-p2-0.3.3.202611202340-d5b4eca.zip",
+        "sha256": "1c6e3a48af5469db1494e59dfa91efda25203a0527122318db758541c1aa52a1",
+        "size": 175985
+      }
     }
   ]
 }
