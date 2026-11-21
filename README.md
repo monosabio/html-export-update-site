@@ -72,7 +72,7 @@ DBeaver does not look for updates in a ZIP. To update later, add the site URL as
 Open **Window > Preferences > Editors > Data Editor > HTML Export**:
 
 - **Python executable**: the full path, for example `C:\Program Files\Python313\python.exe` or `/usr/bin/python3`.
-- **DBeaver Export engine folder**: the folder of the installed DBeaver Export 26.19.1 or 26.20.0 generator, which contains
+- **DBeaver Export engine folder**: the folder of the installed DBeaver Export 26.19.1 or 26.20.0 or 26.21.0 generator, which contains
   `formatear_html_dbeaver_v7.py` and `report/`.
 - **Output folder for HTML reports**: an existing folder of yours.
 - **Click on the HTML Export button**: *Export loaded rows* (default, no SQL) or *Export complete result* (always
@@ -187,7 +187,7 @@ HTML Export shows a technical code and a short explanation, never your data. The
 - **Python not found / not executable / incompatible**: point *Python executable* to a real Python 3.10+ executable.
 - **Engine folder not found / engine file missing**: point *DBeaver Export engine folder* to the folder that contains
   `formatear_html_dbeaver_v7.py` and `report/`.
-- **Engine file modified**: a generator file differs from versions 26.19.1 and 26.20.0, or the folder mixes files of
+- **Engine file modified**: a generator file differs from versions 26.19.1 and 26.20.0 and 26.21.0, or the folder mixes files of
   both. Restore an unmodified copy of one version; on Windows,
   make sure Git did not convert line endings (`core.autocrlf`). Do not edit files to get around the check.
 - **Limit exceeded**: reduce the loaded rows or the visible columns.

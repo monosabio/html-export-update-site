@@ -75,7 +75,7 @@ forma.
 Abrí **Window > Preferences > Editors > Data Editor > HTML Export**:
 
 - **Python executable**: la ruta completa, por ejemplo `C:\Program Files\Python313\python.exe` o `/usr/bin/python3`.
-- **DBeaver Export engine folder**: la carpeta del generador DBeaver Export 26.19.1 o 26.20.0 instalado, la que contiene
+- **DBeaver Export engine folder**: la carpeta del generador DBeaver Export 26.19.1 o 26.20.0 o 26.21.0 instalado, la que contiene
   `formatear_html_dbeaver_v7.py` y `report/`.
 - **Output folder for HTML reports**: una carpeta tuya que ya exista.
 - **Click on the HTML Export button**: *Export loaded rows* (por defecto, sin SQL) o *Export complete result* (siempre
