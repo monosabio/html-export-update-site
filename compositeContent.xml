@@ -2,10 +2,10 @@
 <?compositeMetadataRepository version='1.0.0'?>
 <repository name='HTML Export for DBeaver Community' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1795365477328'/>
+    <property name='p2.timestamp' value='1795567672960'/>
     <property name='p2.atomic.composite.loading' value='true'/>
   </properties>
-  <children size='9'>
+  <children size='10'>
     <child location='releases/0.2.5'/>
     <child location='releases/0.2.6'/>
     <child location='releases/0.3.0'/>
@@ -15,5 +15,6 @@
     <child location='releases/0.6.0'/>
     <child location='releases/0.7.0'/>
     <child location='releases/0.7.1'/>
+    <child location='releases/0.8.0'/>
   </children>
 </repository>
